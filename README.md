@@ -16,10 +16,6 @@
 - Make sure it includes all the variables listed in the .env.sample file.
 - Ensure that the variable names and values match those in the sample file.
    ```bash
-   set POSTGRES_HOST=<your db hostname>
-   set POSTGRES_DB=<your db name>
-   set POSTGRES_USER=<your db username>
-   set POSTGRES_PASSWORD=<your db user password>
    set SECRET_KEY=<your secret key>
    python manage.py migrate
    ```
