@@ -9,5 +9,5 @@ class TeamViewSet(viewsets.ModelViewSet):
 
 
 class PersonViewSet(viewsets.ModelViewSet):
-    queryset = Person.objects.all()
+    queryset = Person.objects.select_related("team")
     serializer_class = PersonSerializer
